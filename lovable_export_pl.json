@@ -1,0 +1,83 @@
+{
+  "project": {
+    "platform": "lovable.dev",
+    "name": "Landing – TOC & IT – ROI Growth (PL)"
+  },
+  "theme": {
+    "preset": "corporate-blue",
+    "font_family": "Inter",
+    "cta_color": "#0056b3",
+    "layout_style": "wide"
+  },
+  "localization": [
+    "pl"
+  ],
+  "layout": {
+    "section_order": [
+      "hero",
+      "pain_points",
+      "solution",
+      "results",
+      "testimonials",
+      "process",
+      "audience",
+      "faq",
+      "lead_capture",
+      "footer",
+      "seo"
+    ]
+  },
+  "hero": {
+    "background": "light-illustrated",
+    "decorations": [
+      {
+        "type": "arrow-up-bent",
+        "instruction": "Add a decorative upward-bent arrow in a contrasting blue tone (visible but subtle), placed near the Hero headline or in the background, symbolizing continuous growth and progress. Ensure it integrates visually with the overall color palette and layout harmony.",
+        "color": "#1a73e8",
+        "opacity": 0.18,
+        "position": "near-headline-right"
+      }
+    ],
+    "title_pl": "Zwiększ Zwrot z Każdej Złotówki (ROI) – Przekładam Złożoność na Trwały Wzrost Twojego Biznesu.",
+    "subtitle_pl": "Pomagam liderom organizacji odzyskać kontrolę nad czasem, przepływem zadań, produktywnością i zyskiem w biznesie poprzez eliminację wąskich gardeł i nieskutecznych wdrożeń.",
+    "ctas": [
+      {
+        "id": "primary",
+        "label_pl": "Zacznij zwiększać zysk – bezpłatna analiza ograniczeń",
+        "variant": "primary",
+        "link": "#lead"
+      },
+      {
+        "id": "secondary",
+        "label_pl": "Umów 15-minutową rozmowę strategiczną",
+        "variant": "ghost",
+        "link": "https://cal.com/"
+      }
+    ],
+    "show_logo": true,
+    "logo_src": "assets/logo_produktywna_firma.svg",
+    "logo_position": "left-of-title",
+    "logo_max_width": "220px"
+  },
+  "sections": {
+    "pain_points": {
+      "title_pl": "Dlaczego Twoja firma utknęła mimo inwestycji, w tym w obszar IT?",
+      "items_pl": [
+        "Zła wielozadaniowość – zespoły działają w rozproszeniu, a priorytety zmieniają się codziennie.",
+        "Silosy i brak wspólnego celu – menedżerowie nie mają jednego punktu odniesienia.",
+        "Niski ROI – projekty IT się spóźniają, a zyski nie rosną.",
+        "Biurokracja i chaos – ciągłe gaszenie pożarów zamiast pracy nad celem."
+      ]
+    }
+  },
+  "assets": {
+    "logo": "assets/logo_produktywna_firma.svg",
+    "favicon": "assets/favicon_pf.svg"
+  },
+  "branding": {
+    "logo_src": "assets/logo_produktywna_firma.svg",
+    "favicon_src": "assets/favicon_pf.svg",
+    "apply_to_header": true,
+    "apply_to_hero": true
+  }
+}
