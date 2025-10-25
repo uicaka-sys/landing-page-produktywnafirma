@@ -27,7 +27,7 @@ jobs:
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: built   # jeśli Twój projekt buduje się do innego folderu (np. build), zmień tu nazwę
+          path: build   # jeśli Twój projekt buduje się do innego folderu (np. build), zmień tu nazwę
   deploy:
     needs: build
     runs-on: ubuntu-latest
