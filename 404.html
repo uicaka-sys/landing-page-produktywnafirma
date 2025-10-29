@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Produktywna Firma</title>
+  <link rel="icon" href="./favicon_pf.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --brand:#0056b3; --text:#0f172a; --muted:#475569; --bg:#f8fafc; }
+    * { box-sizing:border-box }
+    html,body { margin:0; padding:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif; color:var(--text); background:var(--bg) }
+    .wrap { max-width:1100px; margin:0 auto; padding:24px }
+    header { display:flex; align-items:center; gap:16px }
+    header img.logo { height:44px }
+    .hero { display:grid; grid-template-columns:1fr; gap:16px; padding:48px 0 }
+    .eyebrow { color:var(--brand); font-weight:700; letter-spacing:.08em; text-transform:uppercase; font-size:.8rem }
+    h1 { font-size:clamp(28px,5vw,46px); line-height:1.15; margin:8px 0 12px }
+    p.sub { font-size:clamp(16px,2.2vw,20px); color:var(--muted); margin:0 0 18px }
+    .cta { display:flex; gap:12px; flex-wrap:wrap }
+    .btn { padding:12px 16px; border-radius:10px; border:1px solid transparent; font-weight:600; text-decoration:none }
+    .btn.primary { background:var(--brand); color:#fff }
+    .btn.ghost { background:#fff; border-color:#cbd5e1; color:var(--text) }
+    footer { margin:48px 0 12px; font-size:12px; color:#64748b }
+    .arrow { width:100%; height:80px; background:linear-gradient(90deg,rgba(26,115,232,.12),rgba(26,115,232,0)); border-radius:12px }
+    @media(min-width:900px){ .hero { grid-template-columns: 1.2fr .8fr; align-items:center } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img class="logo" src="./logo_produktywna_firma.svg" alt="Logo Produktywna Firma" />
+      <div class="eyebrow">Produktywna Firma</div>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1 id="title">Zwiększ Zwrot z Każdej Złotówki (ROI)</h1>
+        <p class="sub" id="subtitle">Pomagam liderom organizacji odzyskać kontrolę nad czasem…</p>
+        <div class="cta">
+          <a id="ctaPrimary" class="btn primary" href="#lead">Zacznij zwiększać zysk – bezpłatna analiza</a>
+          <a id="ctaSecondary" class="btn ghost" href="https://cal.com/">Umów 15-minutową rozmowę</a>
+        </div>
+      </div>
+      <div>
+        <div class="arrow" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Produktywna Firma — Wszystkie prawa zastrzeżone.
+    </footer>
+  </div>
+
+  <script>
+    // wczytaj dane z lovable_export_pl.json i podmień treści
+    fetch('./lovable_export_pl.json').then(r => r.json()).then(data => {
+      try {
+        const hero = data.hero || {};
+        const t = hero.title_pl || 'Produktywna Firma — Wzrost ROI';
+        const s = hero.subtitle_pl || '';
+        const ctas = hero.ctas || [];
+
+        document.getElementById('title').textContent = t;
+        document.getElementById('subtitle').textContent = s;
+
+        const primary = ctas.find(x => (x.id === 'primary')) || ctas[0];
+        const secondary = ctas.find(x => (x.id === 'secondary')) || ctas[1];
+
+        if (primary) {
+          const a = document.getElementById('ctaPrimary');
+          a.textContent = primary.label_pl || a.textContent;
+          a.href = primary.link || a.href;
+        }
+        if (secondary) {
+          const b = document.getElementById('ctaSecondary');
+          b.textContent = secondary.label_pl || b.textContent;
+          b.href = secondary.link || b.href;
+        }
+      } catch(e) { console.error(e); }
+    }).catch(err => console.warn('Brak JSON lub błąd odczytu:', err));
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
