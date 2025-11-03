@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Produktywna Firma – Zwiększam Zwrot z Każdej Złotówki (ROI)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pomagam liderom odzyskać kontrolę nad czasem, przepływem zadań, produktywnością i zyskiem w biznesie poprzez eliminację wąskich gardeł i nieskutecznych wdrożeń.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo" aria-label="Logo Produktywna Firma">
+            <span class="logo-line-top">Produktywna</span>
+            <span class="logo-line-bottom">Firma</span>
+        </div>
+        <nav class="main-nav">
+            <a href="#hero">Home</a>
+            <div class="nav-dropdown">
+                <button class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                    Moje Usługi
+                    <span class="nav-dropdown-arrow">▾</span>
+                </button>
+                <div class="nav-dropdown-menu">
+                    <div class="nav-dropdown-group">
+                        <p class="nav-dropdown-title">Optymalizacja &amp; Procesy</p>
+                        <a href="#method">Maksymalizacja Przepływu i Eliminacja Wąskich Gardeł</a>
+                        <a href="#method">Usprawnianie Procesów i Operacji</a>
+                    </div>
+                    <div class="nav-dropdown-group">
+                        <p class="nav-dropdown-title">Zarządzanie Organizacją</p>
+                        <a href="#about">Budowa Struktur i Systemów Odpowiedzialności</a>
+                        <a href="#about">Zarządzanie Zespołami i Przywództwem</a>
+                    </div>
+                    <div class="nav-dropdown-group">
+                        <p class="nav-dropdown-title">Projekty &amp; Zmiana</p>
+                        <a href="#method">Zarządzanie Projektami Biznesowymi i IT</a>
+                        <a href="#method">Zarządzanie Zmianą (Change Management)</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#about">O Mnie</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact" class="btn btn-accent btn-small">Kontakt</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="hero" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <img src="logo_produktywna_firma.svg" alt="Logo Produktywna Firma">
+                </div>
+                <h1>Zwiększam Zwrot z Każdej Złotówki (ROI).<br>Przekładam Złożoność na Trwały Wzrost Twojego Biznesu.</h1>
+                <h2>Pomagam liderom odzyskać kontrolę nad czasem, przepływem zadań, produktywnością i zyskiem w biznesie poprzez eliminację wąskich gardeł i nieskutecznych wdrożeń.</h2>
+                <a href="#contact" class="btn btn-accent hero-cta">Umów 15-minutową Rozmowę Strategiczną</a>
+            </div>
+            <div class="hero-form-card" id="contact">
+                <h3>Zacznij od darmowej rozmowy. Powiedz mi, w czym mogę Ci pomóc:</h3>
+                <form id="contact-form">
+                    <div class="form-field">
+                        <label for="name">Imię i Nazwisko</label>
+                        <input type="text" id="name" name="name" required placeholder="Jan Kowalski">
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Służbowy e-mail</label>
+                        <input type="email" id="email" name="email" required placeholder="jan.kowalski@firma.pl">
+                    </div>
+                    <div class="form-field">
+                        <label for="phone">Telefon</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+48 600 000 000">
+                    </div>
+                    <div class="form-field">
+                        <span class="label">Wybierz główny obszar współpracy:</span>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="area" value="maksymalizacja_zyskow" checked>
+                                Maksymalizacja Zysków i Wąskie Gardła
+                            </label>
+                            <label>
+                                <input type="radio" name="area" value="struktury_odpowiedzialnosc">
+                                Struktury i Odpowiedzialność
+                            </label>
+                            <label>
+                                <input type="radio" name="area" value="zmiana_i_projekty">
+                                Zarządzanie Zmianą i Projekty
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-accent btn-full hero-form-cta">Wyślij Zapytanie – Skontaktuję się w 24h</button>
+                    <p class="form-note">Wysyłając formularz, wyrażasz zgodę na kontakt w sprawie współpracy biznesowej.</p>
+                    <p id="form-success" class="form-success" aria-live="polite" hidden>Dziękuję za zgłoszenie. Odezwię się w ciągu 24 godzin.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="method" class="section">
+        <div class="container">
+            <h2>Moja Metoda i Proces. Od Chaosu do Pełnej Kontroli w 3 Krokach.</h2>
+            <div class="steps-grid">
+                <article class="step-card">
+                    <div class="step-icon-wrapper">
+                        <div class="step-icon-number">1</div>
+                        <div class="step-icon-symbol" aria-hidden="true">🔍⚙️</div>
+                    </div>
+                    <h3>Analiza Ograniczeń. Gdzie tracisz?</h3>
+                    <p>Identyfikuję wąskie gardła, utraty efektywności i obszary, w których Twój zespół pracuje poniżej swojego potencjału. Skupiam się na danych, przepływie pracy i realnych wynikach.</p>
+                </article>
+                <article class="step-card">
+                    <div class="step-icon-wrapper">
+                        <div class="step-icon-number">2</div>
+                        <div class="step-icon-symbol" aria-hidden="true">🧱</div>
+                    </div>
+                    <h3>Budowa Systemu. Jak to naprawić?</h3>
+                    <p>Projektuję klarowne struktury odpowiedzialności, procesy i zasady podejmowania decyzji. Celem jest prosty, powtarzalny sposób działania, który nie rozpada się przy każdym kryzysie.</p>
+                </article>
+                <article class="step-card">
+                    <div class="step-icon-wrapper">
+                        <div class="step-icon-number">3</div>
+                        <div class="step-icon-symbol" aria-hidden="true">📈🛡️</div>
+                    </div>
+                    <h3>Wdrożenie Zmiany i Wynik. Trwały wzrost.</h3>
+                    <p>Pomagam wdrożyć zmiany z minimalnym oporem zespołu. Wspólnie monitorujemy efekty, aby zapewnić trwały wzrost zysku, produktywności i przewidywalności wyników.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section section-alt">
+        <div class="container about-grid">
+            <div class="about-text">
+                <h2>Jestem budowniczym stabilnego wzrostu. Stawiam na strukturę, nie na gaszenie pożarów.</h2>
+                <p>Nazywam się Andrzej Kalkowski i współpracuję z liderami, którzy chcą zamienić chaos w skalowalny biznes. Wierzę, że trwały wzrost jest możliwy tylko wtedy, gdy zbuduje się solidne fundamenty. Dlatego moim priorytetem jest nie tylko zwiększenie produktywności, ale przede wszystkim zakorzenienie odpowiedzialności w każdej komórce organizacji.</p>
+                <ul class="about-list">
+                    <li>
+                        <strong>Budowanie Struktur Odpowiedzialności:</strong>
+                        Projektuję i wdrażam klarowne procedury i systemy odpowiedzialności, dzięki którym każdy wie, za co odpowiada i jakie wyniki ma dowozić.
+                    </li>
+                    <li>
+                        <strong>Zarządzanie Zespołami i Przywództwem:</strong>
+                        Wprowadzam systemy decyzyjne i komunikacyjne, które porządkują współpracę między działami i minimalizują potrzebę „ręcznego sterowania” przez właściciela lub zarząd.
+                    </li>
+                    <li>
+                        <strong>Zarządzanie Zmianą:</strong>
+                        Ułatwiam przejście przez procesy transformacji (np. zmiany struktury organizacyjnej, wdrożenia systemów IT), tak aby zespół był zaangażowany, a nie zablokowany oporem.
+                    </li>
+                    <li>
+                        <strong>Optymalizacja Procesów pod Kątem Zysku:</strong>
+                        Używam sprawdzonych metod (m.in. Theory of Constraints), by skupić się na tych miejscach, które mają największy wpływ na wynik finansowy, a nie na „upiększaniu” procesów bez przełożenia na zysk.
+                    </li>
+                </ul>
+            </div>
+            <div class="about-photo">
+                <img src="andrzej-kalkowski.jpg" alt="Andrzej Kalkowski – Produktywna Firma" class="about-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="section">
+        <div class="container">
+            <h2>Blog (w przygotowaniu)</h2>
+            <p>Wkrótce znajdziesz tu artykuły o odpowiedzialności, strukturach, zarządzaniu zmianą i optymalizacji procesów pod kątem zysku. Wszystko oparte na praktycznych doświadczeniach z firm usługowych, produkcyjnych i technologicznych.</p>
+        </div>
+    </section>
+
+    <section id="final-cta" class="section final-cta">
+        <div class="container">
+            <h2>Zacznij od Fundamentów. Daj mi 15 minut, a powiem Ci, gdzie tracisz najwięcej.</h2>
+            <a href="#contact" class="btn btn-accent btn-large">Umów Rozmowę Strategiczną</a>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <div class="footer-left">
+            <div class="logo footer-logo">
+                <span class="logo-line-top">Produktywna</span>
+                <span class="logo-line-bottom">Firma</span>
+            </div>
+            <p>© <span id="year"></span> Produktywna Firma. Wszelkie prawa zastrzeżone.</p>
+        </div>
+        <div class="footer-right">
+            <a href="mailto:andrzej.kalkowski@produktywnafirma.pl">andrzej.kalkowski@produktywnafirma.pl</a>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
